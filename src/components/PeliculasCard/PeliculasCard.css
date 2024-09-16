@@ -7,7 +7,11 @@
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
-    flex-direction: column;
+    
+}
+
+article.peliculas-card {
+    margin: 10px;
 }
 .peliculas-card img{
     width: 100%;

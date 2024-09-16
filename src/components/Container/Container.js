@@ -1,6 +1,6 @@
 import { Component } from "react";
 import PeliculasCard from "../PeliculasCard/PeliculasCard";
-
+import '../Container/Container.css'
 
 class Container extends Component {
     constructor(props){
@@ -25,7 +25,7 @@ class Container extends Component {
         const {Peliculas} = this.state
         const peliculasFiltradas= Peliculas.filter((pelicula,idx)=> idx < 5)
         return(
-            <section>
+            <section className="section-card">
                 {
                     peliculasFiltradas.length > 0 ? (
                         peliculasFiltradas.map((peliculas, idx)=>(
