@@ -4,7 +4,6 @@ const Header= () =>{
     return(
         <nav className='contenedor'>
             <Navbar />
-            
         </nav>
     )
 }

@@ -1,4 +1,21 @@
-.logo {
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.Logo {
     width: 100px;
-    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.main-nav li {
+    margin: 0 15px;
+}
+
+.main-nav a {
+    color: black;
+    font-size: 18px;
 }

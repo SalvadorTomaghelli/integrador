@@ -13,7 +13,7 @@ class PeliculasCard extends Component{
         const {poster_path, title, overview} = this.props.peliculas
         return(
             <article className="peliculas-card">
-                <img src={`https://image.tmdb.org/t/p/w500${poster_path}`} alt={title} />
+                <img src={`https://image.tmdb.org/t/p/w500${poster_path}`} alt={title} className="imagen" />
                 <h2>{title} </h2> 
                 <p className='more' onClick={()=> this.setState({
                     mostrarMas: !this.state.mostrarMas
