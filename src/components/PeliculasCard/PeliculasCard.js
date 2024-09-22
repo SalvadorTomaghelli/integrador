@@ -18,6 +18,12 @@ class PeliculasCard extends Component{
             favorito:!this.state.favorito
         })
     }
+    guardarEnStorage(pelicula){
+        const peliculaEnJSON = JSON.stringify({pelicula: pelicula});
+        localStorage.setItem('peliculaDetalle', peliculaEnJSON) 
+        console.log(peliculaEnJSON)
+    }
+
     render(){
         const {poster_path, title, overview,id} = this.props.peliculas
         return(
@@ -33,7 +39,7 @@ class PeliculasCard extends Component{
                         {overview}
                     </p>
                 }
-                <Link to={`/Peliculas/${id}`}><p className='detail'>Ir a detalle</p></Link>
+                <Link to='/Detalle/' onClick={() => this.guardarEnStorage(this.props.peliculas)}><p className='detail'>Ir a detalle</p></Link>
                 
                 <p className='favoritos'>
                     {this.state.favorito ? 'Añadido a Favoritos' : 'Agregar a Favoritos'}
