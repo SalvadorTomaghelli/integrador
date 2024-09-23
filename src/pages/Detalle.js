@@ -1,6 +1,7 @@
 const Detalle= () => {
     return(
         <>
+        
         </>
     )
 }

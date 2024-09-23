@@ -6,6 +6,7 @@ import Detalle from './pages/Detalle';
 import Favoritos from './pages/Favoritos';
 import Error from './pages/Error';
 import VerTodas from './pages/VerTodas';
+import VerTodasPopu from './pages/VerTodasPopu';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/Favoritos' component={Favoritos}/>
           <Route path='/VerTodas' component={VerTodas}/>
           <Route path='/Peliculas/:id' component={Detalle}/>
+          <Route path='/VerTodasPopulares' component={VerTodasPopu}/>
         </Switch>
       <Footer/>
      
