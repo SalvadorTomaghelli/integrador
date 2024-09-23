@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Detalle from './pages/Detalle';
 import Favoritos from './pages/Favoritos';
 import Error from './pages/Error';
-import VerTodas from './pages/VerTodas';
+import VerTodasCart from './pages/VerTodasCart';
 
 function App() {
   return (
@@ -14,8 +14,9 @@ function App() {
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route path='/Favoritos' component={Favoritos}/>
-          <Route path='/VerTodas' component={VerTodas}/>
+          <Route path='/VerTodasCartelera' component={VerTodasCart}/>
           <Route path='/Peliculas/:id' component={Detalle}/>
+          <Route path='' component={Error}/>
         </Switch>
       <Footer/>
      
