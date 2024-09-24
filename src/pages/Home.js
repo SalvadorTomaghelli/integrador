@@ -1,21 +1,16 @@
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Container from "../components/Container/Container";
 import Form from "../components/Form/Form";
-import {Link} from 'react-router-dom'
-
-
 const Home= () => {
     return(
         <>
             <Form/>
             <section>
             <h2>Peliculas Populares</h2>
-                <Container url='https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&api_key=26cb00ba0e4d52cae073a420c45e2d99'/>
-                <Link to ='/VerTodasPopulares'>Ver Todas</Link>
+            <Link to='/VerTodasPopulares'>Ver Todas</Link>
             </section>
-            
-            <h2>Peliculas Populares</h2>
             <Container url='https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&api_key=26cb00ba0e4d52cae073a420c45e2d99'/>
+            
             <section>
             <h2>Peliculas en Cartel</h2>
             <Link to='/VerTodasCartelera'>Ver Todas</Link>

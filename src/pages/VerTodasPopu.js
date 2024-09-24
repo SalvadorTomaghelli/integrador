@@ -1,6 +1,4 @@
 import VerTodasPopulares from "../components/VerTodasPopulares/VerTodasPopulares"
-
-
 const VerTodasPopu = () =>{
     return(
         <>
