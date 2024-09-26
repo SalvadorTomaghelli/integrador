@@ -1,0 +1,12 @@
+.cartelera-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.div-filtro{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,41 @@
+.populares-card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.peliculas-list {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly; 
+    gap: 20px; 
+    width: 100%; 
+}
+
+.load-more-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.load-more-container button {
+    padding: 10px 20px; 
+    background-color: blue; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    
+}
+
+.load-more-container button:hover {
+    background-color: rgb(109, 109, 199);
+}

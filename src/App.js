@@ -5,7 +5,9 @@ import Home from './pages/Home';
 import Detalle from './pages/Detalle';
 import Favoritos from './pages/Favoritos';
 import Error from './pages/Error';
-import VerTodas from './pages/VerTodas';
+import VerTodasCart from './pages/VerTodasCart';
+import VerTodasPopu from './pages/VerTodasPopu';
+
 
 function App() {
   return (
@@ -13,9 +15,13 @@ function App() {
       <Header/>
         <Switch>
           <Route exact path='/' component={Home}/>
-          <Route path='/Favoritos' component={Favoritos}/>
-          <Route path='/VerTodas' component={VerTodas}/>
-          <Route path='/Detalle' component={Detalle}/>
+          <Route path='/favoritos' component={Favoritos}/>
+          <Route path='/detalle' component={Detalle}/>
+          <Route path='/cartelera' component={VerTodasCart}/>
+          <Route path='/populares' component={VerTodasPopu}/>
+          <Route path='/peliculas/:id' component={Detalle}/>
+          <Route path='' component={Error}/>
+         
         </Switch>
       <Footer/>
      
