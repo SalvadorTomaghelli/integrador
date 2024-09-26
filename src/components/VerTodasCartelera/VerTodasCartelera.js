@@ -2,6 +2,7 @@ import { Component } from "react";
 import PeliculasCard from "../PeliculasCard/PeliculasCard";
 import './VerTodasCartelera.css'
 import '../VerTodasPopulares/VerTodasPopulares.css'
+import Loader from '../Loader/Loader'
 
 class VerTodasCartelera extends Component {
     constructor(props){
@@ -69,7 +70,7 @@ class VerTodasCartelera extends Component {
                             <PeliculasCard key={idx} peliculas={peliculas} />
                         ))
                     ) : (
-                        <p>Cargando...</p>
+                        <Loader/>
                     )
                 }
                 

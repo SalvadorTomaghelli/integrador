@@ -1,6 +1,8 @@
 import { Component } from "react";
 import PeliculasCard from "../PeliculasCard/PeliculasCard";
 import './VerTodasPopulares.css'
+import Loader from '../Loader/Loader'
+
 class VerTodasPopulares extends Component {
     constructor(props){
         super(props)
@@ -65,7 +67,7 @@ class VerTodasPopulares extends Component {
                         <PeliculasCard key={idx} peliculas={peliculas} />
                     ))
                 ) : (
-                    <p>Cargando...</p>
+                    <Loader/>
                 )}
             </div>
             <div className="load-more-container">

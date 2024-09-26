@@ -1,6 +1,7 @@
 import { Component } from "react";
 import PeliculasCard from "../PeliculasCard/PeliculasCard";
 import '../Container/Container.css'
+import Loader from '../Loader/Loader'
 
 class Container extends Component {
     constructor(props){
@@ -32,7 +33,7 @@ class Container extends Component {
                             <PeliculasCard key={idx} peliculas={peliculas} />
                         ))
                     ) : (
-                        <p>Cargando...</p>
+                        <Loader/>
                     )
                 }
             </section>
