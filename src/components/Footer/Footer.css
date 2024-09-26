@@ -1,0 +1,13 @@
+.footer{
+    background-color:  #4e73df;
+    height: 60px;
+    display: flex;
+    justify-content: center;    
+    margin-top: 20px;
+}
+
+.footer li{
+    color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+}
