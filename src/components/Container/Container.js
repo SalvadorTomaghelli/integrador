@@ -27,7 +27,7 @@ class Container extends Component {
         return(
             <section className="section-card">
                 {
-                    peliculasFiltradas.length > 0 ? (
+                    peliculasFiltradas.length > 0 ? (   
                         peliculasFiltradas.map((peliculas, idx)=>(
                             <PeliculasCard key={idx} peliculas={peliculas} />
                         ))

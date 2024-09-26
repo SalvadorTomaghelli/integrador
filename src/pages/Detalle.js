@@ -4,7 +4,7 @@ const Detalle= () => {
     
     return(
         <>
-            <DetalleContainer/>
+            <DetalleContainer/> 
         </>
     )
 }
