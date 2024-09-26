@@ -39,7 +39,7 @@ class PeliculasCard extends Component{
                         {overview}
                     </p>
                 }
-                <Link to='/Detalle/' onClick={() => this.guardarEnStorage(this.props.peliculas)}><p className='detail'>Ir a detalle</p></Link>
+                <Link to='/detalle/' onClick={() => this.guardarEnStorage(this.props.peliculas)}><p className='detail'>Ir a detalle</p></Link>
                 
                 <p className='favoritos'>
                     {this.state.favorito ? 'Añadido a Favoritos' : 'Agregar a Favoritos'}

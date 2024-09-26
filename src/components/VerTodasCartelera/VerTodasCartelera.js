@@ -59,7 +59,7 @@ class VerTodasCartelera extends Component {
     <button onClick={() => this.handleResetFilter()}>Reset Filter</button>
     <button onClick={() => this.handleLoadMore()}>Cargar Mas</button>
 
-            <section className="cartelera-card">
+            <section className="peliculas-list">
                 {
                     PeliculasFiltradas.length > 0 ? (
                         PeliculasFiltradas.map((peliculas, idx)=>(
