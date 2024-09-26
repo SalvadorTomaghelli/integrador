@@ -1,0 +1,18 @@
+.div-vertodas button {
+    padding: 10px 20px; 
+    background-color: blue; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    
+}
+
+.div-vertodas a{
+    color: white;
+    text-decoration: none;
+}
+
+.div-vertodas button:hover {
+    background-color: rgb(109, 109, 199);
+}

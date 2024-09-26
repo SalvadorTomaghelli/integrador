@@ -1,6 +1,7 @@
 import { Component } from "react";
 import PeliculasCard from "../PeliculasCard/PeliculasCard";
 import './VerTodasCartelera.css'
+import '../VerTodasPopulares/VerTodasPopulares.css'
 
 class VerTodasCartelera extends Component {
     constructor(props){
@@ -54,11 +55,13 @@ class VerTodasCartelera extends Component {
         return(
             <>
 
-    <input type='text' value={this.state.Filtrado} onChange={(e) => this.handleFilter(e)}/>
-
-    <button onClick={() => this.handleResetFilter()}>Reset Filter</button>
-    <button onClick={() => this.handleLoadMore()}>Cargar Mas</button>
-
+    <div className="div-filtro">
+        <input type='text' value={this.state.Filtrado} onChange={(e) => this.handleFilter(e)}/>
+        
+        <button onClick={() => this.handleResetFilter()}>Reset Filter</button>
+    
+    </div>
+    
             <section className="peliculas-list">
                 {
                     PeliculasFiltradas.length > 0 ? (
@@ -71,6 +74,9 @@ class VerTodasCartelera extends Component {
                 }
                 
             </section>
+            <div className="load-more-container">
+                <button onClick={() => this.handleLoadMore()}>Cargar Mas</button>
+            </div>
             </>
         )
     }
