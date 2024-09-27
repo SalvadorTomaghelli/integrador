@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { FaHeart } from "react-icons/fa"
 import { FaRegHeart } from "react-icons/fa"
+import './DetalleContainer.css'
 
 class DetalleContainer extends Component  {
     constructor(props){
@@ -85,15 +86,15 @@ class DetalleContainer extends Component  {
             }
 
             return(
-                <div>
+                <div className = "div-detalle">
                     <h1>Detalle</h1>
-                    <h2>Nombre: {peliculas.original_title}</h2>
+                    <h2 className="h2">Nombre: {peliculas.original_title}</h2>
                     <img src={`https://image.tmdb.org/t/p/w500${peliculas.poster_path}`} alt={'Imagen de la pelicula'} className="imagen" />
-                    <h2>Rating: {peliculas.vote_average}</h2>
-                    <h2>Fecha de estreno: {peliculas.release_date}</h2>
-                    <h2>Duracion: {peliculas.runtime ? `${peliculas.runtime} minutos` : 'Duración no disponible'}</h2>
-                    <h2>Generos: {peliculas.genres.map(genero => genero.name).join(', ')}</h2>
-                    <h2>Sinopsis: {peliculas.overview}</h2>
+                    <h2 className="h2">Rating: {peliculas.vote_average}</h2>
+                    <h2 className="h2">Fecha de estreno: {peliculas.release_date}</h2>
+                    <h2 className="h2">Duracion: {peliculas.runtime ? `${peliculas.runtime} minutos` : 'Duración no disponible'}</h2>
+                    <h2 className="h2">Generos: {peliculas.genres.map(genero => genero.name).join(', ')}</h2>
+                    <h2 className="h2">Sinopsis: {peliculas.overview}</h2>
 
                     <div className= 'corazon' onClick={()=> this.state.esFavorito ? this.quitarFavoritos() : this.agregarAFavoritos() }>
                         {this.state.esFavorito ? <FaHeart size={20} /> : <FaRegHeart size={20} />}
