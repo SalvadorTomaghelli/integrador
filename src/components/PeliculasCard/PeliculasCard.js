@@ -62,7 +62,7 @@ class PeliculasCard extends Component{
     }
 
     render(){
-        const {poster_path, title, overview,id} = this.props.peliculas
+        const {poster_path, title, overview} = this.props.peliculas
         return(
             <article className="peliculas-card">
                 <img src={`https://image.tmdb.org/t/p/w500${poster_path}`} alt={title} className="imagen" />

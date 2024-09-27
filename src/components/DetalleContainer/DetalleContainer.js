@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { FaHeart } from "react-icons/fa"
 import { FaRegHeart } from "react-icons/fa"
-
+import Loader from '../Loader/Loader'
 class DetalleContainer extends Component  {
     constructor(props){
         super(props);
@@ -81,7 +81,7 @@ class DetalleContainer extends Component  {
         const {peliculas} = this.state;
     
             if (Cargando) {
-                return <h1>Cargando...</h1>;
+                return <Loader/>;
             }
 
             return(

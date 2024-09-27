@@ -1,7 +1,7 @@
 import { Component } from "react";
 //import FavoritosContainer from "../components/FavoritosContainer/FavoritosContainer";
 import PeliculasCard from "../components/PeliculasCard/PeliculasCard";
-
+import Loader from '../components/Loader/Loader'
 class Favoritos extends Component  {
     constructor(props){
         super(props);
@@ -34,7 +34,7 @@ class Favoritos extends Component  {
             const {Cargando} = this.state;
     
             if (Cargando) {
-                return <h1>Cargando...</h1>;
+                return <Loader/>;
             }
     
             return (
