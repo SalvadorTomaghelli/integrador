@@ -7,6 +7,7 @@ import Favoritos from './pages/Favoritos';
 import Error from './pages/Error';
 import VerTodasCart from './pages/VerTodasCart';
 import VerTodasPopu from './pages/VerTodasPopu';
+import SearchResults from './pages/SearchResults';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path='/cartelera' component={VerTodasCart}/>
           <Route path='/populares' component={VerTodasPopu}/>
           <Route path='/peliculas/:id' component={Detalle}/>
+          <Route path='/searchresults' component={SearchResults}/>
           <Route path='' component={Error}/>
          
         </Switch>

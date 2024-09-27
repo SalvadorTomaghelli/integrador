@@ -17,7 +17,7 @@ class Form extends Component{
         })
     }
     buscar(){
-        this.props.history.push(''/* aca iria la pag de search */ ,{valor: this.state.valor})
+        this.props.history.push('/searchresults' ,{valor: this.state.valor})
 
     }
     render(){
