@@ -1,8 +1,27 @@
-/* .div-detalle{
-    justify-content: center;
-    align-items: center;
+.div-detalle{
+    font-family: 'Open Sans', sans-serif;
 }
-.h2{
-    justify-content: center;
+
+h1{
+    text-align: center;
+}
+.section-detalle{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-evenly;
+    
+}
+
+.corazon{
+    display: flex;
+    flex-direction: row;
+    
     align-items: center;
-} */
+    
+}
+
+
+.section-detalle img{
+    margin-right: 20px;
+}

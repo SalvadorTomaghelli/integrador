@@ -1,5 +1,7 @@
 import DetalleContainer from "../components/DetalleContainer/DetalleContainer";
 
+
+
 const Detalle= () => {
     
     return(
