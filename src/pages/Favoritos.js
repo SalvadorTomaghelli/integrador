@@ -15,7 +15,6 @@ class Favoritos extends Component  {
         const storage = localStorage.getItem('favoritos')
         if(storage !== null){
             const parsedStorage = JSON.parse(storage);
-            console.log("este es el parsedsotrage",parsedStorage)
             Promise.all(
                 parsedStorage.map((id) =>
                     fetch(

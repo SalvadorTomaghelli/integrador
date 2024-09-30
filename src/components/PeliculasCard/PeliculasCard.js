@@ -46,7 +46,6 @@ class PeliculasCard extends Component{
     quitarFavoritos(){
         const storage = localStorage.getItem('favoritos')
         const parsedStorage = JSON.parse(storage)
-        console.log(parsedStorage)
         const restoFavoritos = parsedStorage.filter(alf => alf !== this.props.peliculas.id)
         const stringStorage = JSON.stringify(restoFavoritos)
         localStorage.setItem('favoritos', stringStorage)
